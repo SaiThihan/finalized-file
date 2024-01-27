@@ -22,3 +22,145 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: var(--color-neutral-very-dark-blue-bg);
+}
+
+/*container general style*/
+#container {
+  color: var(--color-neutral-white);
+  font-family: var(--font-weight-regular);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#card {
+  background-color: var(--color-neutral-very-dark-blue-bg-card);
+  border-radius: 10px;
+
+  width: 320px;
+  height: 540px;
+  padding: 20px;
+}
+
+/*top_section*/
+/*equilibrium image*/
+#equilibrium_image {
+  width: 280px;
+  border-radius: 10px;
+}
+
+#hover_equilibrium {
+  border-radius: 10px;
+
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  margin-top: -280px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hover_equilibrium:hover {
+  background-color: hsla(178, 100%, 50%, 0.534);
+  cursor: pointer;
+  border-radius: 10px;
+
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  margin-top: -285px;
+}
+
+#view_image {
+  display: none;
+}
+
+#hover_equilibrium:hover #view_image {
+  display: flex;
+}
+
+/*Middle Section*/
+/*title and texts*/
+h1 {
+  font-weight: 600;
+  font-size: 22px; /* Change em to px */
+  margin-top: 15px;
+}
+
+#middle_section > div > p {
+  color: var(--color-primary-soft-blue);
+  font-weight: var(--font-weight-light);
+  font-size: 17px;
+  margin-top: 15px;
+}
+
+/*bottom section*/
+#bottom_section {
+  display: flex;
+  width: 280px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#ETH_box {
+  color: var(--color-primary-cyan);
+  display: flex;
+  width: 50%;
+}
+
+#ETH_icon {
+  margin-right: 5px;
+}
+
+#clock_box {
+  color: var(--color-primary-soft-blue);
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+#clock_icon {
+  margin-right: 5px;
+}
+
+/*avatar and the creation of*/
+#box_avatar {
+  color: var(--color-primary-soft-blue);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  width: 280px;
+  border-top: 1px solid var(--color-neutral-very-dark-blue-line);
+  height: 70px;
+  margin-top: 20px;
+}
+
+#avatar_icon {
+  border: 1px solid var(--color-neutral-white);
+  width: 35px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+/*texts hover*/
+.text_bold {
+  color: var(--color-neutral-white);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.text_bold:hover {
+  color: var(--color-primary-cyan);
+  cursor: pointer;
+}
+
+main a {
+  text-decoration: none;
+  color: var(--color-neutral-white);
+}
